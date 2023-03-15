@@ -1,0 +1,51 @@
+
+.ContainerFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LinksRedesSociais {
+    margin-top: 7rem;
+    a {
+        margin: 0.225rem;
+        color: var(--white);
+        transition: 0.5s;
+        i {
+            transition: 0.7s;
+
+            &:hover {
+                transform: translateY(-10px) scale(1.1);
+            }
+        }
+        &:hover {
+            .twitter {
+                color: #1d9bf0;
+            }
+            .linkedin {
+                color: #0a66c2;
+            }
+            .instagram {
+                color: #cf31a5;
+            }
+
+            transform: translateY(-10px) scale(1.2);
+        }
+    }
+}
+
+.text-footer {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--white);
+    opacity: 1;
+    margin-bottom: 0;
+    margin-top: 0.9rem;
+    transition: 0.5s;
+
+    &:hover {
+        transition: all 0.7s;
+        color: var(--green);
+    }
+}

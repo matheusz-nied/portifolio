@@ -1,0 +1,88 @@
+.section-main {
+  padding-top: 9rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.section-main .container-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.section-main .container-main .destaque-main {
+  font-family: var(--font-poppins);
+  color: rgb(255, 255, 255);
+  background-color: #111111;
+  padding: 0.5rem;
+  width: 13rem;
+  border-radius: 2px;
+}
+.section-main .container-main .titulo-main {
+  font-family: var(--font-poppins);
+  font-weight: 100;
+  font-size: 3.7rem;
+  margin-top: 1.3rem;
+}
+.section-main .container-main .titulo-main .destaque {
+  color: var(--green);
+}
+@media screen and (max-width: 768px) {
+  .section-main .container-main .titulo-main {
+    font-size: 1.8rem;
+  }
+}
+.section-main .container-main .cargo-main {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 4.1rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .section-main .container-main .cargo-main {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.section-main .container-main .descricao-main {
+  margin-top: 1rem;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 768px) {
+  .section-main .container-main .descricao-main {
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.section-main .container-main .link-saiba-mais {
+  font-family: var(--font-poppins);
+  color: var(--black);
+  background-color: var(--green);
+  margin-top: 4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 11rem;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+.section-main .container-main .link-saiba-mais:hover {
+  opacity: 0.9;
+  transform: translateY(-6px);
+}
+.section-main .container-main .social-main {
+  margin-top: 5rem;
+}
+.section-main .container-main .social-main a {
+  margin: 1rem;
+  color: var(--white);
+}
+.section-main .container-main .social-main a:hover {
+  color: var(--green);
+}
+.section-main .container-main .social-main a:hover i {
+  transition: all 0.7s;
+  transform: scale(1.1, 1.1);
+}

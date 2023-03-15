@@ -1,0 +1,130 @@
+nav {
+    height: 3.5rem;
+    transition: all 1.3s;
+
+    border: 0px solid var(--white);
+    //box-shadow: 0px 1.5px 2px -1.1px rgba(255, 255, 255);
+
+    margin-top: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+
+    img {
+        height: 3rem;
+    }
+    .links-menu {
+        color: white;
+        margin-right: 3rem;
+        font-size: 1.1rem;
+        ul {
+            transition: all 0.7s;
+
+      
+            display: flex;
+            li {
+                margin-left: 1.3rem;
+
+
+                &:hover{
+                    transition: all 0.7s;
+                    transform: scale(1.1,1.1);
+
+                }
+                a {
+                    color: white;
+                    
+                    &:hover{
+                        transition: all 0.7s;
+                        color: var(--green);
+                        transform: scale(3,3);
+
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .button-hamburguer {
+        //estilizar butao
+        background-color: transparent;
+        display: block;
+        z-index: 10;
+        border: none;
+        color: white;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    .icon-button {
+        display: none;
+        transition: all 0.7s;
+    }
+
+    .dropdown {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transition: 3s;
+        margin-right: 1rem;
+    }
+    .dropdown-child {
+        transition: all 0.7s;
+
+        height: 0;
+        position: absolute;
+        top: 90%;
+        right: 25%;
+        background-color: var(--white);
+
+        color: var(--black);
+
+        min-width: 170px;
+
+        ul {
+            display: none;
+            li {
+                text-align: center;
+                p {
+                    color: var(--black);
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                }
+
+                a {
+                    color: var(--black);
+                }
+            }
+        }
+    }
+    .container-close-drop {
+        justify-content: space-between;
+        margin-right: 0.7rem;
+        margin-top: 0.7rem;
+    }
+    .dropdown-child a {
+        color: blue;
+        padding: 15px;
+
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-show {
+        transition: all 0.7s;
+        height: 16rem;
+        ul {
+            display: block;
+        }
+    }
+
+    //     .dropdown:hover .dropdown-child {
+    //         display: block;
+    //     }
+}

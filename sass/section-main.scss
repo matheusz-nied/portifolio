@@ -1,0 +1,93 @@
+.section-main {
+    padding-top: 9rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        .destaque-main {
+            font-family: var(--font-poppins);
+            color: rgb(255, 255, 255);
+            background-color: #111111;
+            padding: 0.5rem;
+            width: 13rem;
+            border-radius: 2px;
+        }
+
+        .titulo-main {
+            font-family: var(--font-poppins);
+            font-weight: 100;
+            font-size: 3.7rem;
+            margin-top: 1.3rem;
+            .destaque {
+                color: var(--green);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        .cargo-main {
+            font-family: var(--font-poppins);
+
+            font-weight: 600;
+            font-size: 4.1rem;
+            margin-top: 1rem;
+            @media screen and (max-width: 768px) {
+                font-size: 1.7rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+        .descricao-main {
+            margin-top: 1rem;
+            opacity: 0.8;
+            font-size: 1.1rem;
+
+            @media screen and (max-width: 768px) {
+                font-size: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+
+        .link-saiba-mais {
+            font-family: var(--font-poppins);
+            color: var(--black);
+            background-color: var(--green);
+            margin-top: 4rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            width: 11rem;
+            border-radius: 3px;
+            transition: all 0.7s;
+
+            &:hover {
+                opacity: 0.9;
+                transform: translateY(-6px);
+            }
+        }
+
+        .social-main {
+            margin-top: 5rem;
+
+            a {
+                margin: 1rem;
+                color: var(--white);
+                &:hover {
+                    color: var(--green);
+                    i {
+                        transition: all 0.7s;
+
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800&&family=Inter:wght@500;600;700;800;900&display=swap");
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --black: #000000;
+  --green: rgb(3, 197, 3);
+  --white: #ffffff;
+}

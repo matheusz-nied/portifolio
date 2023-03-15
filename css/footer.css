@@ -1,0 +1,47 @@
+.ContainerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.LinksRedesSociais {
+  margin-top: 7rem;
+}
+.LinksRedesSociais a {
+  margin: 0.225rem;
+  color: var(--white);
+  transition: 0.5s;
+}
+.LinksRedesSociais a i {
+  transition: 0.7s;
+}
+.LinksRedesSociais a i:hover {
+  transform: translateY(-10px) scale(1.1);
+}
+.LinksRedesSociais a:hover {
+  transform: translateY(-10px) scale(1.2);
+}
+.LinksRedesSociais a:hover .twitter {
+  color: #1d9bf0;
+}
+.LinksRedesSociais a:hover .linkedin {
+  color: #0a66c2;
+}
+.LinksRedesSociais a:hover .instagram {
+  color: #cf31a5;
+}
+
+.text-footer {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--white);
+  opacity: 1;
+  margin-bottom: 0;
+  margin-top: 0.9rem;
+  transition: 0.5s;
+}
+.text-footer:hover {
+  transition: all 0.7s;
+  color: var(--green);
+}
