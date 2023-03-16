@@ -1,0 +1,14 @@
+.section-skills {
+  margin-top: 5rem;
+  align-items: center;
+  text-align: center;
+}
+.section-skills h3 {
+  font-size: 3rem;
+}
+.section-skills .container-icons {
+  margin-top: 3rem;
+}
+.section-skills .container-icons .box-icon {
+  margin: 1.7rem;
+}

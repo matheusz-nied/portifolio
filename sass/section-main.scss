@@ -45,9 +45,13 @@
             }
         }
         .descricao-main {
-            margin-top: 1rem;
+            margin-top: 1.9rem;
             opacity: 0.8;
             font-size: 1.1rem;
+            width: 50%;
+            @media screen and (max-width: 768px) {
+                width: 90%;
+            }
 
             @media screen and (max-width: 768px) {
                 font-size: 1rem;
@@ -56,20 +60,63 @@
             }
         }
 
-        .link-saiba-mais {
-            font-family: var(--font-poppins);
-            color: var(--black);
-            background-color: var(--green);
-            margin-top: 4rem;
-            padding-top: 0.8rem;
-            padding-bottom: 0.8rem;
-            width: 11rem;
-            border-radius: 3px;
-            transition: all 0.7s;
+        .container-buttons{
 
-            &:hover {
-                opacity: 0.9;
-                transform: translateY(-6px);
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-around;
+            width: 30rem;
+
+            @media screen and (max-width: 768px) {
+                width: 90%;
+
+            }
+            .button-cv {
+                font-family: var(--font-poppins);
+    
+                background-color: transparent;
+                color: white;
+                margin-top: 2.5rem;
+                border: 1px solid var(--white);
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                width: 11rem;
+                border-radius: 3px;
+                transition: all 0.7s;
+    
+                &:hover {
+                    transform: translateY(-6px);
+                }
+                i {
+                    color: white;
+                }
+
+                @media screen and (max-width: 768px) {
+                    width: 9rem;
+    
+                }
+            }
+    
+            .link-saiba-mais {
+                font-family: var(--font-poppins);
+                color: var(--black);
+                background-color: var(--green);
+                margin-top: 2.5rem;
+
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                width: 11rem;
+                border-radius: 3px;
+                transition: all 0.7s;
+    
+                &:hover {
+                    opacity: 0.9;
+                    transform: translateY(-6px);
+                }
+                @media screen and (max-width: 768px) {
+                    width: 9rem;
+    
+                }
             }
         }
 

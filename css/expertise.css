@@ -6,5 +6,78 @@
 }
 .section-expertise h3 {
   font-family: var(--font-poppins);
+  text-align: center;
   font-size: 3rem;
+  transition: all 0.7s;
+}
+@media screen and (max-width: 768px) {
+  .section-expertise h3 {
+    font-size: 2.1rem;
+  }
+}
+.section-expertise h3:hover {
+  color: var(--green);
+}
+.section-expertise .container-card {
+  margin-top: 5rem;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .section-expertise .container-card {
+    flex-direction: column;
+  }
+}
+.section-expertise .container-card .card {
+  height: 21rem;
+  width: 21rem;
+  border: 1px solid var(--white);
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+@media screen and (max-width: 768px) {
+  .section-expertise .container-card .card {
+    height: 20rem;
+    width: 21rem;
+  }
+}
+.section-expertise .container-card .card .header-card {
+  display: flex;
+  margin: 1rem 1rem 1rem 0.5rem;
+}
+.section-expertise .container-card .card .header-card .title-card {
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.section-expertise .container-card .card hr {
+  height: 1px;
+  background-color: var(--green);
+  border: none;
+}
+.section-expertise .container-card .card .description-card {
+  font-family: var(--font-poppins);
+  color: var(--white);
+  margin: 3rem 1rem 1rem 1.9rem;
+  font-size: 1.3rem;
+}
+.section-expertise .container-card .card:hover {
+  border: 1px solid var(--green);
+}
+.section-expertise .container-card .card:hover .title-card {
+  transition: all 0.7s;
+  color: var(--green);
+}
+.section-expertise .container-card .card:hover hr {
+  transition: all 0.7s;
+  height: 1px;
+  background-color: var(--white);
+  border: none;
+}
+.section-expertise .container-card .card:hover .description-card {
+  transition: all 0.7s;
+  color: var(--green);
 }

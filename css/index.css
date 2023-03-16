@@ -231,9 +231,15 @@ nav .dropdown-show ul {
   }
 }
 .section-main .container-main .descricao-main {
-  margin-top: 1rem;
+  margin-top: 1.9rem;
   opacity: 0.8;
   font-size: 1.1rem;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .section-main .container-main .descricao-main {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 768px) {
   .section-main .container-main .descricao-main {
@@ -242,20 +248,59 @@ nav .dropdown-show ul {
     margin-right: 1rem;
   }
 }
-.section-main .container-main .link-saiba-mais {
-  font-family: var(--font-poppins);
-  color: var(--black);
-  background-color: var(--green);
+.section-main .container-main .container-buttons {
   margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  width: 30rem;
+}
+@media screen and (max-width: 768px) {
+  .section-main .container-main .container-buttons {
+    width: 90%;
+  }
+}
+.section-main .container-main .container-buttons .button-cv {
+  font-family: var(--font-poppins);
+  background-color: transparent;
+  color: white;
+  margin-top: 2.5rem;
+  border: 1px solid var(--white);
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   width: 11rem;
   border-radius: 3px;
   transition: all 0.7s;
 }
-.section-main .container-main .link-saiba-mais:hover {
+.section-main .container-main .container-buttons .button-cv:hover {
+  transform: translateY(-6px);
+}
+.section-main .container-main .container-buttons .button-cv i {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .section-main .container-main .container-buttons .button-cv {
+    width: 9rem;
+  }
+}
+.section-main .container-main .container-buttons .link-saiba-mais {
+  font-family: var(--font-poppins);
+  color: var(--black);
+  background-color: var(--green);
+  margin-top: 2.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 11rem;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+.section-main .container-main .container-buttons .link-saiba-mais:hover {
   opacity: 0.9;
   transform: translateY(-6px);
+}
+@media screen and (max-width: 768px) {
+  .section-main .container-main .container-buttons .link-saiba-mais {
+    width: 9rem;
+  }
 }
 .section-main .container-main .social-main {
   margin-top: 5rem;
@@ -328,5 +373,93 @@ nav .dropdown-show ul {
 }
 .section-expertise h3 {
   font-family: var(--font-poppins);
+  text-align: center;
   font-size: 3rem;
+  transition: all 0.7s;
+}
+@media screen and (max-width: 768px) {
+  .section-expertise h3 {
+    font-size: 2.1rem;
+  }
+}
+.section-expertise h3:hover {
+  color: var(--green);
+}
+.section-expertise .container-card {
+  margin-top: 5rem;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .section-expertise .container-card {
+    flex-direction: column;
+  }
+}
+.section-expertise .container-card .card {
+  height: 21rem;
+  width: 21rem;
+  border: 1px solid var(--white);
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+@media screen and (max-width: 768px) {
+  .section-expertise .container-card .card {
+    height: 20rem;
+    width: 21rem;
+  }
+}
+.section-expertise .container-card .card .header-card {
+  display: flex;
+  margin: 1rem 1rem 1rem 0.5rem;
+}
+.section-expertise .container-card .card .header-card .title-card {
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.section-expertise .container-card .card hr {
+  height: 1px;
+  background-color: var(--green);
+  border: none;
+}
+.section-expertise .container-card .card .description-card {
+  font-family: var(--font-poppins);
+  color: var(--white);
+  margin: 3rem 1rem 1rem 1.9rem;
+  font-size: 1.3rem;
+}
+.section-expertise .container-card .card:hover {
+  border: 1px solid var(--green);
+}
+.section-expertise .container-card .card:hover .title-card {
+  transition: all 0.7s;
+  color: var(--green);
+}
+.section-expertise .container-card .card:hover hr {
+  transition: all 0.7s;
+  height: 1px;
+  background-color: var(--white);
+  border: none;
+}
+.section-expertise .container-card .card:hover .description-card {
+  transition: all 0.7s;
+  color: var(--green);
+}
+
+.section-skills {
+  margin-top: 5rem;
+  align-items: center;
+  text-align: center;
+}
+.section-skills h3 {
+  font-size: 3rem;
+}
+.section-skills .container-icons {
+  margin-top: 3rem;
+}
+.section-skills .container-icons .box-icon {
+  margin: 1.7rem;
 }
