@@ -5,14 +5,41 @@
 
     h3{
         font-size:3rem;
+        transition: all .7s;
+
+        &:hover {
+            color: var(--green);
+        }
     }
 
     .container-icons{
         margin-top:3rem;
-    
+        padding-left: 9rem;
+        padding-right: 9rem;
+        display: grid;
+
+ @media screen and (max-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+            }
+        grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
 
         .box-icon{
             margin: 1.7rem;
+            transition: all .7s;
+            &:hover {
+                transform: scale(1.2,1.2);
+                color: var(--green);
+            }
+            font-size: 1.7rem;
+            i{
+                margin-top: 1.9rem;
+
+            }
+            p {
+                font-size: 1.1rem;
+            }
         }
+
     }
 }

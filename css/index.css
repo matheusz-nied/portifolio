@@ -456,10 +456,36 @@ nav .dropdown-show ul {
 }
 .section-skills h3 {
   font-size: 3rem;
+  transition: all 0.7s;
+}
+.section-skills h3:hover {
+  color: var(--green);
 }
 .section-skills .container-icons {
   margin-top: 3rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
+}
+@media screen and (max-width: 768px) {
+  .section-skills .container-icons {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 .section-skills .container-icons .box-icon {
   margin: 1.7rem;
+  transition: all 0.7s;
+  font-size: 1.7rem;
+}
+.section-skills .container-icons .box-icon:hover {
+  transform: scale(1.2, 1.2);
+  color: var(--green);
+}
+.section-skills .container-icons .box-icon i {
+  margin-top: 1.9rem;
+}
+.section-skills .container-icons .box-icon p {
+  font-size: 1.1rem;
 }
