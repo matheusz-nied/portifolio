@@ -2,3 +2,17 @@ body {
   background-color: var(--black);
   color: var(--white);
 }
+body h3 {
+  font-family: var(--font-poppins);
+  text-align: center;
+  font-size: 3rem;
+  transition: all 0.7s;
+}
+@media screen and (max-width: 768px) {
+  body h3 {
+    font-size: 2.1rem;
+  }
+}
+body h3:hover {
+  color: var(--green);
+}

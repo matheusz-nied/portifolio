@@ -4,5 +4,19 @@ body {
     color: var(--white);
     
     
+    h3 {
+        font-family: var(--font-poppins);
+        text-align: center;
+        font-size: 3rem;
+        @media screen and (max-width: 768px) {
+            font-size: 2.1rem;
+        }
+
+        transition: all 0.7s;
+
+        &:hover {
+            color: var(--green);
+        }
+    }
 }
 

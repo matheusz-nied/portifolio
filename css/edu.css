@@ -1,0 +1,106 @@
+.section-edu {
+  margin-top: 5rem;
+}
+.section-edu .container-edus {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-edu .container-edus hr {
+  margin-top: 2.5rem;
+  margin-bottom: 5.5rem;
+  height: 1px;
+  background-color: var(--green);
+  border: none;
+  box-shadow: 0.1rem 0rem 1rem 0.1rem var(--green);
+}
+@media screen and (max-width: 768px) {
+  .section-edu .container-edus {
+    padding-left: 1.2rem;
+    width: 90%;
+  }
+}
+.section-edu .container-edus .card-edu .edu {
+  display: flex;
+  margin-top: 4.9rem;
+  max-width: 40rem;
+}
+@media screen and (max-width: 768px) {
+  .section-edu .container-edus .card-edu .edu {
+    margin-top: 3.9rem;
+  }
+}
+.section-edu .container-edus .card-edu .edu .container-point {
+  margin-top: 0.7rem;
+}
+.section-edu .container-edus .card-edu .edu .container-point .point {
+  content: "";
+  top: 3rem;
+  right: -0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--green);
+  box-shadow: 0.1rem 0rem 1rem 0.1rem var(--green);
+  border-radius: 100%;
+  align-items: center;
+  text-align: center;
+  margin-right: 1rem;
+}
+.section-edu .container-edus .card-edu .edu .info-edu {
+  margin-left: 1rem;
+}
+.section-edu .container-edus .card-edu .edu .info-edu .container-title {
+  display: flex;
+  font-size: 1.4rem;
+}
+.section-edu .container-edus .card-edu .edu .info-edu .container-title .title {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+.section-edu .container-edus .card-edu .edu .info-edu .subtitle {
+  margin-left: 0.2rem;
+  color: var(--green);
+}
+.section-edu .container-edus .card-edu .edu .info-edu .description {
+  margin-top: 1.3rem;
+}
+.section-edu .container-edus .card-edu .edu .info-edu .data {
+  font-size: 0.83rem;
+  margin-top: 0.6rem;
+  color: #818181;
+}
+.section-edu .container-edus .card-edu .container-certificado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.section-edu .container-edus .card-edu .container-certificado .button-certificado {
+  font-family: var(--font-poppins);
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 0.8rem 0 0.8rem 0;
+  border-radius: 3px;
+  transition: all 0.7s;
+  width: 12.25rem;
+  text-align: center;
+}
+.section-edu .container-edus .card-edu .container-certificado .button-certificado:hover {
+  transform: translateY(-6px);
+  color: var(--green);
+}
+.section-edu .container-edus .card-edu .container-certificado .button-progresso {
+  font-family: var(--font-poppins);
+  background-color: transparent;
+  color: #a6a6a6;
+  cursor: not-allowed;
+  border: 1px solid #a6a6a6;
+  padding: 0.8rem;
+  border-radius: 3px;
+  transition: all 0.7s;
+  width: 12.25rem;
+  text-align: center;
+}
