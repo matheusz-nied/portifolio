@@ -88,9 +88,7 @@
 }
 .section-main .container-main .container-buttons .button-cv:hover {
   transform: translateY(-6px);
-}
-.section-main .container-main .container-buttons .button-cv i {
-  color: white;
+  color: var(--green);
 }
 @media screen and (max-width: 768px) {
   .section-main .container-main .container-buttons .button-cv {

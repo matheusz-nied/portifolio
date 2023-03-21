@@ -1,5 +1,4 @@
 .section-skills {
-  margin-top: 5rem;
   align-items: center;
   text-align: center;
 }
@@ -12,8 +11,8 @@
 }
 .section-skills .container-icons {
   margin-top: 3rem;
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
 }

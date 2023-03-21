@@ -1,8 +1,5 @@
-.section-edu {
-  margin-top: 5rem;
-}
 .section-edu .container-edus {
-  margin-top: 6rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;

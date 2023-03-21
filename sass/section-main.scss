@@ -60,8 +60,7 @@
             }
         }
 
-        .container-buttons{
-
+        .container-buttons {
             margin-top: 4rem;
             display: flex;
             justify-content: space-around;
@@ -69,11 +68,10 @@
 
             @media screen and (max-width: 768px) {
                 width: 90%;
-
             }
             .button-cv {
                 font-family: var(--font-poppins);
-    
+
                 background-color: transparent;
                 color: white;
                 margin-top: 2.5rem;
@@ -83,20 +81,17 @@
                 width: 11rem;
                 border-radius: 3px;
                 transition: all 0.7s;
-    
+
                 &:hover {
                     transform: translateY(-6px);
-                }
-                i {
-                    color: white;
+                    color: var(--green);
                 }
 
                 @media screen and (max-width: 768px) {
                     width: 9rem;
-    
                 }
             }
-    
+
             .link-saiba-mais {
                 font-family: var(--font-poppins);
                 color: var(--black);
@@ -108,14 +103,13 @@
                 width: 11rem;
                 border-radius: 3px;
                 transition: all 0.7s;
-    
+
                 &:hover {
                     opacity: 0.9;
                     transform: translateY(-6px);
                 }
                 @media screen and (max-width: 768px) {
                     width: 9rem;
-    
                 }
             }
         }

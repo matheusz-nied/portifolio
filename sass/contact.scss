@@ -1,0 +1,88 @@
+.section-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 70rem;
+        font-size: 1.3rem;
+        margin-top: 3rem;
+
+        p {
+            text-align: center;
+            margin: 0 2rem 0 2rem;
+            margin-top: 0.9rem;
+        }
+        .button-email {
+            position: relative;
+
+
+            @keyframes point {
+                50% { opacity: 0.5; }
+                100% { opacity: 1; }
+            }
+            .point {
+                content: "";
+                top: -.4rem;
+                right: -.4rem;
+                width: 0.8rem;
+                height: 0.8rem;
+                background-color: var(--green);
+                box-shadow: 0.1rem 0rem 1rem 0.1rem var(--green);
+                border-radius: 100%;
+                position: absolute;
+                align-items: center;
+                text-align: center;
+    
+                -webkit-animation: point .9s linear infinite;
+                -moz-animation: point .9s linear infinite;
+                -ms-animation: point .9s linear infinite;
+                -o-animation: point .9s linear infinite;
+                animation: point .9s linear infinite;            }
+            font-family: var(--font-poppins);
+
+            background-color: transparent;
+            color: white;
+            border: 1px solid var(--white);
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            width: 11rem;
+            border-radius: 3px;
+            margin-top: 5.5rem;
+            text-align: center;
+
+            transition: all 0.7s;
+
+            &:hover {
+                transform: translateY(-6px);
+                color: var(--green);
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 9rem;
+            }
+
+           
+        }
+
+        .social-main {
+            margin-top: 5rem;
+
+            a {
+                margin: 1rem;
+                color: var(--white);
+                &:hover {
+                    color: var(--green);
+                    i {
+                        transition: all 0.7s;
+
+                        transform: scale(1.1, 1.1) translateY(-6px);
+                    }
+                }
+            }
+        }
+    }
+}

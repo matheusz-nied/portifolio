@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10rem;
 }
 .section-expertise h3 {
   font-family: var(--font-poppins);

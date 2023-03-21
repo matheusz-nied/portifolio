@@ -72,6 +72,7 @@ body {
   color: var(--white);
 }
 body h3 {
+  margin-top: 10rem;
   font-family: var(--font-poppins);
   text-align: center;
   font-size: 3rem;
@@ -80,6 +81,7 @@ body h3 {
 @media screen and (max-width: 768px) {
   body h3 {
     font-size: 2.1rem;
+    margin-top: 10rem;
   }
 }
 body h3:hover {
@@ -287,9 +289,7 @@ nav .dropdown-show ul {
 }
 .section-main .container-main .container-buttons .button-cv:hover {
   transform: translateY(-6px);
-}
-.section-main .container-main .container-buttons .button-cv i {
-  color: white;
+  color: var(--green);
 }
 @media screen and (max-width: 768px) {
   .section-main .container-main .container-buttons .button-cv {
@@ -384,7 +384,6 @@ nav .dropdown-show ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10rem;
 }
 .section-expertise h3 {
   font-family: var(--font-poppins);
@@ -465,7 +464,6 @@ nav .dropdown-show ul {
 }
 
 .section-skills {
-  margin-top: 5rem;
   align-items: center;
   text-align: center;
 }
@@ -478,8 +476,8 @@ nav .dropdown-show ul {
 }
 .section-skills .container-icons {
   margin-top: 3rem;
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
 }
@@ -505,11 +503,8 @@ nav .dropdown-show ul {
   font-size: 1.1rem;
 }
 
-.section-edu {
-  margin-top: 5rem;
-}
 .section-edu .container-edus {
-  margin-top: 6rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -610,4 +605,86 @@ nav .dropdown-show ul {
   transition: all 0.7s;
   width: 12.25rem;
   text-align: center;
+}
+
+.section-contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section-contact .container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70rem;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+}
+.section-contact .container-contact p {
+  text-align: center;
+  margin: 0 2rem 0 2rem;
+  margin-top: 0.9rem;
+}
+.section-contact .container-contact .button-email {
+  position: relative;
+  font-family: var(--font-poppins);
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--white);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 11rem;
+  border-radius: 3px;
+  margin-top: 5.5rem;
+  text-align: center;
+  transition: all 0.7s;
+}
+@keyframes point {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section-contact .container-contact .button-email .point {
+  content: "";
+  top: -0.4rem;
+  right: -0.4rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--green);
+  box-shadow: 0.1rem 0rem 1rem 0.1rem var(--green);
+  border-radius: 100%;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  -webkit-animation: point 0.9s linear infinite;
+  -moz-animation: point 0.9s linear infinite;
+  -ms-animation: point 0.9s linear infinite;
+  -o-animation: point 0.9s linear infinite;
+  animation: point 0.9s linear infinite;
+}
+.section-contact .container-contact .button-email:hover {
+  transform: translateY(-6px);
+  color: var(--green);
+}
+@media screen and (max-width: 768px) {
+  .section-contact .container-contact .button-email {
+    width: 9rem;
+  }
+}
+.section-contact .container-contact .social-main {
+  margin-top: 5rem;
+}
+.section-contact .container-contact .social-main a {
+  margin: 1rem;
+  color: var(--white);
+}
+.section-contact .container-contact .social-main a:hover {
+  color: var(--green);
+}
+.section-contact .container-contact .social-main a:hover i {
+  transition: all 0.7s;
+  transform: scale(1.1, 1.1) translateY(-6px);
 }
