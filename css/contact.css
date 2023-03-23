@@ -3,6 +3,18 @@
   align-items: center;
   flex-direction: column;
 }
+.section-contact .title-contact {
+  animation: title-contact 1.3s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes title-contact {
+  0% {
+    color: var(--white);
+  }
+  100% {
+    color: var(--green);
+  }
+}
 .section-contact .container-contact {
   display: flex;
   flex-direction: column;

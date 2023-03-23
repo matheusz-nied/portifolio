@@ -76,16 +76,12 @@ body h3 {
   font-family: var(--font-poppins);
   text-align: center;
   font-size: 3rem;
-  transition: all 0.7s;
 }
 @media screen and (max-width: 768px) {
   body h3 {
     font-size: 2.1rem;
     margin-top: 10rem;
   }
-}
-body h3:hover {
-  color: var(--green);
 }
 
 nav {
@@ -607,10 +603,56 @@ nav .dropdown-show ul {
   text-align: center;
 }
 
+.section-projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section-projects .container-projects {
+  display: grid;
+  padding: 2rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, auto));
+}
+@media screen and (min-width: 768px) {
+  .section-projects .container-projects {
+    width: 80%;
+  }
+}
+.section-projects .container-projects .card-project {
+  text-align: center;
+  margin-top: 4rem;
+  width: 25rem;
+}
+.section-projects .container-projects .card-project h5 {
+  font-size: 1.7rem;
+}
+.section-projects .container-projects .card-project img {
+  width: 100%;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .section-projects .container-projects .card-project img {
+    width: 90%;
+  }
+}
+
 .section-contact {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.section-contact .title-contact {
+  animation: title-contact 1.3s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes title-contact {
+  0% {
+    color: var(--white);
+  }
+  100% {
+    color: var(--green);
+  }
 }
 .section-contact .container-contact {
   display: flex;

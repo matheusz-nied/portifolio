@@ -1,1 +1,33 @@
-
+.section-projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section-projects .container-projects {
+  display: grid;
+  padding: 2rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, auto));
+}
+@media screen and (min-width: 768px) {
+  .section-projects .container-projects {
+    width: 80%;
+  }
+}
+.section-projects .container-projects .card-project {
+  text-align: center;
+  margin-top: 4rem;
+  width: 25rem;
+}
+.section-projects .container-projects .card-project h5 {
+  font-size: 1.7rem;
+}
+.section-projects .container-projects .card-project img {
+  width: 100%;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .section-projects .container-projects .card-project img {
+    width: 90%;
+  }
+}
