@@ -189,7 +189,7 @@ nav .dropdown-child a {
 }
 nav .dropdown-show {
   transition: all 0.7s;
-  height: 16rem;
+  height: 15rem;
 }
 nav .dropdown-show ul {
   display: block;
@@ -607,12 +607,13 @@ nav .dropdown-show ul {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .section-projects .container-projects {
   display: grid;
-  padding: 2rem;
+  margin-top: 2rem;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, auto));
+  grid-template-columns: repeat(auto-fit, minmax(19rem, auto));
 }
 @media screen and (min-width: 768px) {
   .section-projects .container-projects {
@@ -620,20 +621,76 @@ nav .dropdown-show ul {
   }
 }
 .section-projects .container-projects .card-project {
+  font-family: var(--font-poppins);
   text-align: center;
   margin-top: 4rem;
-  width: 25rem;
+  width: 23rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .section-projects .container-projects .card-project h5 {
   font-size: 1.7rem;
+  margin-bottom: 0.7rem;
 }
 .section-projects .container-projects .card-project img {
   width: 100%;
   border-radius: 5px;
+  transition: all 0.7s;
 }
 @media screen and (max-width: 768px) {
   .section-projects .container-projects .card-project img {
-    width: 90%;
+    width: 95%;
+  }
+}
+.section-projects .container-projects .card-project .container-link-to {
+  width: 12rem;
+  display: flex;
+  justify-content: space-around;
+}
+.section-projects .container-projects .card-project .container-link-to a {
+  background-color: transparent;
+  color: white;
+  margin: 1.23rem 0.3rem 1rem 0.3rem;
+  border: 1px solid var(--white);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 5rem;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+.section-projects .container-projects .card-project .container-link-to a:hover {
+  color: var(--green);
+}
+.section-projects .container-projects .card-project p {
+  padding: 0 1rem 0 1rem;
+}
+.section-projects .buton-github {
+  font-family: var(--font-poppins);
+  color: var(--black);
+  background-color: var(--green);
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 1px solid transparent;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 11rem;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+.section-projects .buton-github:hover {
+  opacity: 0.9;
+  background-color: transparent;
+  transform: scale(1.1, 1.1);
+  color: white;
+  border: 1px solid var(--white);
+}
+@media screen and (max-width: 768px) {
+  .section-projects .buton-github {
+    width: 9rem;
   }
 }
 

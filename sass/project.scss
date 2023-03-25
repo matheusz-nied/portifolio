@@ -2,31 +2,102 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    
+    
 	.container-projects{
         display: grid;
-        padding: 2rem;
+        margin-top: 2rem;
         justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(27rem, auto));
+        grid-template-columns: repeat(auto-fit, minmax(19rem, auto));
         
         @media screen and (min-width: 768px){
             width: 80%;
         }
         .card-project{
+            font-family: var(--font-poppins);
             text-align: center;
             margin-top: 4rem;
-            width:25rem;
+            width:23rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
 
             h5 {
                 font-size:1.7rem;
+                
+                margin-bottom: .7rem;
             }
             img{
                 width: 100% ;
                 border-radius: 5px;
+                transition: all 0.7s;
+               
                 @media screen and (max-width: 768px){
-                    width: 90%;
+                    width: 95% ;
                 }
             }
+            .container-link-to{
+                width: 12rem;
+                display: flex;
+                justify-content: space-around;
+                a{
+
+                background-color: transparent;
+                color: white;
+                margin: 1.23rem .3rem 1rem .3rem;
+                border: 1px solid var(--white);
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                width: 5rem;
+                border-radius: 3px;
+                transition: all 0.7s;
+
+                &:hover {
+                    color: var(--green);
+                }
+                }
+            }
+
+            p{
+                
+                padding: 0 1rem 0 1rem;
+            }
         }
+    }
+
+
+    .buton-github {
+        font-family: var(--font-poppins);
+                color: var(--black);
+                background-color: var(--green);
+                margin-top: 2.5rem;
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 400;
+                border: 1px solid transparent;
+
+
+
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                width: 11rem;
+                border-radius: 3px;
+                transition: all 0.7s;
+
+                &:hover {
+                    opacity: 0.9;
+                    background-color: transparent;
+                    transform: scale(1.1,1.1);
+                    color: white;
+                    border: 1px solid var(--white);
+
+                }
+                @media screen and (max-width: 768px) {
+                    width: 9rem;
+                }
+            
     }
 
   

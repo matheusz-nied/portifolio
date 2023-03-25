@@ -103,7 +103,7 @@ nav .dropdown-child a {
 }
 nav .dropdown-show {
   transition: all 0.7s;
-  height: 16rem;
+  height: 15rem;
 }
 nav .dropdown-show ul {
   display: block;
