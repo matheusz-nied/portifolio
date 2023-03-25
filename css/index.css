@@ -182,14 +182,13 @@ nav .container-close-drop {
   margin-top: 0.7rem;
 }
 nav .dropdown-child a {
-  color: blue;
   padding: 15px;
   text-decoration: none;
   display: block;
 }
 nav .dropdown-show {
   transition: all 0.7s;
-  height: 15rem;
+  height: 18rem;
 }
 nav .dropdown-show ul {
   display: block;
@@ -609,11 +608,17 @@ nav .dropdown-show ul {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .section-projects {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 .section-projects .container-projects {
   display: grid;
   margin-top: 2rem;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, auto));
+  grid-template-columns: repeat(auto-fit, minmax(23rem, auto));
 }
 @media screen and (min-width: 768px) {
   .section-projects .container-projects {
@@ -621,6 +626,7 @@ nav .dropdown-show ul {
   }
 }
 .section-projects .container-projects .card-project {
+  padding-top: 0;
   font-family: var(--font-poppins);
   text-align: center;
   margin-top: 4rem;
@@ -628,7 +634,6 @@ nav .dropdown-show ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 .section-projects .container-projects .card-project h5 {
   font-size: 1.7rem;
@@ -643,6 +648,9 @@ nav .dropdown-show ul {
   .section-projects .container-projects .card-project img {
     width: 95%;
   }
+}
+.section-projects .container-projects .card-project img:hover {
+  transform: scale(1.07, 1.07);
 }
 .section-projects .container-projects .card-project .container-link-to {
   width: 12rem;

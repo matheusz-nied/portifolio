@@ -96,14 +96,13 @@ nav .container-close-drop {
   margin-top: 0.7rem;
 }
 nav .dropdown-child a {
-  color: blue;
   padding: 15px;
   text-decoration: none;
   display: block;
 }
 nav .dropdown-show {
   transition: all 0.7s;
-  height: 15rem;
+  height: 18rem;
 }
 nav .dropdown-show ul {
   display: block;

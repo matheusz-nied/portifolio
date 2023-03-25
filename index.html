@@ -23,19 +23,22 @@
             <div class="links-menu">
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="">experting</a>
+                        <a href="#expertise">Especialidade</a>
                     </li>
                     <li>
-                        <a href="">Habilidades</a>
+                        <a href="#skills">Habilidades</a>
                     </li>
                     <li>
-                        <a href="">Projetos</a>
+                        <a href="#edu">Educação</a>
                     </li>
                     <li>
-                        <a href="">Contato</a>
+                        <a href="#projects">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -50,19 +53,22 @@
                 <div class="dropdown-child">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="">experting</a>
+                            <a href="#expertise">Especialidade</a>
                         </li>
                         <li>
-                            <a href="">Habilidades</a>
+                            <a href="#skills">Habilidades</a>
                         </li>
                         <li>
-                            <a href="">Projetos</a>
+                            <a href="#edu">Educação</a>
                         </li>
                         <li>
-                            <a href="">Contato</a>
+                            <a href="#projects">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contato</a>
                         </li>
                     </ul>
 
@@ -76,7 +82,7 @@
     </nav>
 
     <main>
-        <section class="section-main">
+        <section id="home" class="section-main">
             <div class="container-main">
                 <p class="destaque-main">CIÊNCIA & PROGRESSO</p>
                 <h2 class="titulo-main">Olá, eu sou <span class="destaque">Matheus </span></h2>
@@ -107,7 +113,7 @@
             </div>
         </section>
 
-        <section id="#expertise" class="section-expertise">
+        <section id="expertise" class="section-expertise">
             <h3>Minha especialidade</h3>
 
             <div class="container-card">
@@ -186,7 +192,7 @@
 
         </section>
 
-        <section class="section-skills">
+        <section id="skills" class="section-skills">
             <h3>Skills</h3>
             <div class="container-icons">
                 <div class="box-icon">
@@ -223,7 +229,7 @@
             </div>
         </section>
 
-        <section class="section-edu">
+        <section id="edu" class="section-edu">
             <h3>Educação</h3>
             <div class="container-edus">
                 <div class="card-edu">
@@ -285,7 +291,7 @@
 
                     </div>
                     <div class="container-certificado">
-                        <a class="button-certificado" href="/images/certificadoAlura.pdf" download>Visualizar
+                        <a class="button-certificado" href="/images/pdf/certificadoAlura.pdf" download>Visualizar
                             Certificado</a>
                     </div>
                 </div>
@@ -293,42 +299,55 @@
             </div>
         </section>
 
-        <section class="section-projects">
+        <section id="projects" class="section-projects">
             <h3>My Projects</h3>
             <a class="buton-github" href="">Github</a>
+
             <div class="container-projects">
+
+
                 <div class="card-project">
                     <h5>Blog</h5>
-                    <img src="./images/projetos/fundo.jpg" alt="">
+                    <a href="https://visionary-kulfi-690c3f.netlify.app/"  target="_blank" rel="noreferrer">
+
+                        <img src="./images/projetos/blog.png" alt="">
+                    </a>
                     <div class="container-link-to">
-                        <a href="">Github</a>
-                        <a href="">Site</a>
+                        <a href="https://github.com/matheusz-nied/Nied-Blog">Github</a>
+                        <a href="https://visionary-kulfi-690c3f.netlify.app/">Site</a>
                     </div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+                    <p>description description description description description description description description
                     </p>
                 </div>
 
                 <div class="card-project">
                     <h5>Checkout</h5>
-                    <img src="./images/projetos/fundo.jpg" alt="">
+                    <a href="https://github.com/matheusz-nied/Checkout"  target="_blank" rel="noreferrer">
+
+                        <img src="./images/projetos/checkout.gif" alt="Gif projeto Checkout">
+                    </a>
                     <div class="container-link-to">
-                        <a href="">Github</a>
-                        <a href="">Site</a>
+                        <a href="https://github.com/matheusz-nied/Checkout">Github</a>
                     </div>
                     <p>description description description description description description description description
                     </p>
                 </div>
 
+
+
                 <div class="card-project">
                     <h5>Nied Notas</h5>
-                    <img src="./images/projetos/fundo.jpg" alt="">
+                    <a href="https://github.com/matheusz-nied/Nied-Notas"  target="_blank" rel="noreferrer">
+
+                        <img src="./images/projetos/videonotas.gif" alt="Gif projeto nied notas">
+                    </a>
                     <div class="container-link-to">
-                        <a href="">Github</a>
-                        <a href="">Site</a>
+                        <a href="https://github.com/matheusz-nied/Nied-Blog">Github</a>
                     </div>
                     <p>description description description description description description description description
                     </p>
                 </div>
+
 
 
 
@@ -336,7 +355,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section id="contact" class="section-contact">
             <h3 class="title-contact">
                 Contact me
             </h3>
@@ -348,7 +367,7 @@
                     com você!
                 </p>
                 <p>Me mande um e-mail.</p>
-                <a class="button-email" href="mailto:matheustae@hotmail.com" rel="noopener noreferrer" target="_blank">
+                <a class="button-email" href="https://api.whatsapp.com/send?phone=62994395965" target="_blank" rel="noreferrer">
 
                     <div class="point">
 

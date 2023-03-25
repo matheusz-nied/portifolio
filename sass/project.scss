@@ -4,17 +4,23 @@
     flex-direction: column;
     justify-content: center;
     
+
+    @media screen and (min-width: 768px){
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
     
 	.container-projects{
         display: grid;
         margin-top: 2rem;
         justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(19rem, auto));
+        grid-template-columns: repeat(auto-fit, minmax(23rem, auto));
         
         @media screen and (min-width: 768px){
             width: 80%;
         }
         .card-project{
+            padding-top: 0;
             font-family: var(--font-poppins);
             text-align: center;
             margin-top: 4rem;
@@ -22,7 +28,6 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            justify-content: center;
 
             h5 {
                 font-size:1.7rem;
@@ -30,12 +35,17 @@
                 margin-bottom: .7rem;
             }
             img{
+
                 width: 100% ;
                 border-radius: 5px;
                 transition: all 0.7s;
                
                 @media screen and (max-width: 768px){
                     width: 95% ;
+                }
+
+                &:hover {
+                    transform: scale(1.07, 1.07);
                 }
             }
             .container-link-to{

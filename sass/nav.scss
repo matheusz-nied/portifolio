@@ -110,7 +110,6 @@ nav {
         margin-top: 0.7rem;
     }
     .dropdown-child a {
-        color: blue;
         padding: 15px;
 
         text-decoration: none;
@@ -118,7 +117,7 @@ nav {
     }
     .dropdown-show {
         transition: all 0.7s;
-        height: 15rem;
+        height: 18rem;
         ul {
             display: block;
         }
