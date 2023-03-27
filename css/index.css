@@ -634,6 +634,7 @@ nav .dropdown-show ul {
   display: flex;
   align-items: center;
   flex-direction: column;
+  line-height: 1.18;
 }
 .section-projects .container-projects .card-project h5 {
   font-size: 1.7rem;
@@ -719,6 +720,11 @@ nav .dropdown-show ul {
     color: var(--green);
   }
 }
+.section-contact .box-email {
+  margin-top: 1.7rem;
+  font-size: 1rem;
+  color: var(--green);
+}
 .section-contact .container-contact {
   display: flex;
   flex-direction: column;
@@ -742,7 +748,7 @@ nav .dropdown-show ul {
   padding-bottom: 0.8rem;
   width: 11rem;
   border-radius: 3px;
-  margin-top: 5.5rem;
+  margin-top: 3.5rem;
   text-align: center;
   transition: all 0.7s;
 }

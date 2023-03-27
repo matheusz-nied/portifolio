@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  line-height: 1.18;
 }
 .section-projects .container-projects .card-project h5 {
   font-size: 1.7rem;
