@@ -67,9 +67,14 @@ table {
   --white: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--black);
   color: var(--white);
+  scroll-behavior: smooth;
 }
 body h3 {
   margin-top: 10rem;
